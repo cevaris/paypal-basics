@@ -41,6 +41,8 @@ gem 'spring',        group: :development
 
 gem 'activemerchant'
 
+gem 'dotenv-rails', :groups => [:development, :test]
+
 group :development do
   gem 'guard'
   gem 'guard-livereload'
@@ -49,4 +51,6 @@ group :development do
   gem 'pry'
   gem 'pry-rails'
   gem 'pry-byebug'
+  gem 'pry-remote'
+  gem 'pry-stack_explorer'
 end

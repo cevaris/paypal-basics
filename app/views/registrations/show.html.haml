@@ -43,4 +43,7 @@
           - else
             %p
               %strong Transaction Identifier:
-              = @registration.card.card_transaction.params["transaction_id"]
+              - if @registration.transaction_id
+                = @registration.transaction_id
+              - if @registration.card.card_transaction
+                = @registration.card.card_transaction.params["transaction_id"]
